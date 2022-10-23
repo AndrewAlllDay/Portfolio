@@ -49,15 +49,18 @@ a {
 
 /*START OF NAV STYLES*/
 
-.logo {width: 20px;
-  margin-left: 25px;
-  margin-right: 25px;
+.logo {width: 30px;
+ margin-left: 15px;
+ margin-right: 15px;
+ margin-top: -6px;
+ margin-bottom: -6px;
         }
 
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #333;
   overflow: hidden;
+  position: sticky;
 }
 
 /* Style the links inside the navigation bar */
@@ -68,7 +71,7 @@ a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 20px;
 }
 
 /* Change the color of links on hover */
@@ -81,6 +84,7 @@ a {
 .topnav a.active {
   background-color: var(--green);
   color: white;
+  margin-right: 20px;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
@@ -180,7 +184,7 @@ word-spacing: 5px;}
 
 .form {
   width: 50vw;
-  max-width: 1000px;
+  max-width: 600px;
   min-width: 300px;
   margin: 0 auto;
   padding-bottom: 2em;
@@ -194,7 +198,13 @@ fieldset {
   padding: 2rem 0;
 }
 
-label {color: var(--green); }
+.contact label {
+  color: var(--green);
+  font-weight: 200;
+  letter-spacing: 4px;
+ }
+
+
 
 input,
 textarea,
@@ -206,5 +216,7 @@ select {
 }
 
   input, textarea {
-    background-color: var(--light-gray);
-    color: #ffffff;}
+    background-color: var(--white);
+    color: #ffffff;
+    margin-bottom: 20px;
+    }
