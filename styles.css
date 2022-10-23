@@ -64,8 +64,6 @@ a {
   font-size: 17px;
 }
 
-.topnav a:not(:first-child) {float:right;}
-
 /* Change the color of links on hover */
 .topnav a:hover {
   background-color: #ddd;
