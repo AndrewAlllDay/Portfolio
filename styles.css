@@ -120,6 +120,7 @@ a {
 
 /* START OF HERO STYLES */
 
+
 .hero {
     display: flex;
     flex-direction: column;
@@ -129,8 +130,13 @@ a {
     height: 100vh;
     background-color:var(--black);
     color:var(--green);
+    overflow: hidden;
+    background: #C04848;  /* fallback for old browsers */
+    background: linear-gradient(rgba(0, 0, 0, 0.472), rgba(0, 0, 0, 0.915)), url("images/michael-w9MeSCK0imA-unsplash.jpg");  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("images/michael-w9MeSCK0imA-unsplash.jpg"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-
 
 @media only screen and (max-width: 600px) {
     .hero {height: 75vh;
