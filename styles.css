@@ -30,6 +30,7 @@ h1 {
     font-weight: 400;
     word-spacing: -30px;
     letter-spacing: 4px;
+    
 }
 
 ul {list-style: none;}
@@ -89,7 +90,9 @@ a {
 
 .hero h1 {
     margin-bottom: -20px;
+    text-align: center;
 }
 
-.hero p {text-align: center;}
+.hero p {text-align: center;
+word-spacing: 5px;}
 
