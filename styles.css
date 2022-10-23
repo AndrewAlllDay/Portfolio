@@ -3,6 +3,7 @@
     --white: #fff;
     --black: #000;
     --gray: #464646;
+    --light-gray: #7b7a7a;
 }
 
 * {
@@ -47,6 +48,12 @@ a {
 /*END OF GLOBAL STYLES*/
 
 /*START OF NAV STYLES*/
+
+.logo {width: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
+        }
+
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #333;
@@ -160,3 +167,44 @@ word-spacing: 5px;}
 
 .work h2 {text-decoration: underline;}
 
+.contact {background-color: var(--black);}
+
+.contact h1 {
+  text-align: center;
+  color: var(--green);
+}
+
+.contact p {text-align: center;
+  color: var(--green);}
+
+
+.form {
+  width: 50vw;
+  max-width: 1000px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+  margin-top: 50px;
+  justify-content: center;
+}
+
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+}
+
+label {color: var(--green); }
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+  
+}
+
+  input, textarea {
+    background-color: var(--light-gray);
+    color: #ffffff;}
