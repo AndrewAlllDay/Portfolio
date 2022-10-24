@@ -140,11 +140,19 @@ a {
 
 @media only screen and (max-width: 600px) {
     .hero {height: 75vh;
-            width: auto;}
+            width: auto;
+            padding-left: 20px;
+            padding-right: 20px;
+           
+          }
     
     .hero h1 {
       font-size: 5rem;
+      line-height: 85px;
+      padding-bottom: 50px;
     }
+
+    .hero p {font-size: 1.5rem;}
   }
 
 .hero h1 {
@@ -159,16 +167,27 @@ word-spacing: 5px;}
 
 /* END OF HERO STYLES */
 
+
+
 /*START OF WORK STYLES*/
+
+.work-links-header {
+  max-width: 1000px;
+  margin-bottom: 50px;
+  text-align: center;
+  
+}
 
 .work {
     width: auto;
-    height: 100vh;
+    height: auto;
     background-color: var(--gray);
     padding: 10rem 20rem;
     color: var(--white);
     text-align: center;
     }
+
+
     @media only screen and (max-width: 600px) {
         .work {padding:0;}
         
@@ -177,7 +196,48 @@ word-spacing: 5px;}
 
 .work h2 {text-decoration: underline;}
 
+.work-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+  text-align: center;
+}
+
+.code {
+  color: var(--green);
+  transition: color 0.3s ease-out;
+}
+
+.project {background-color: var(--green);
+}
+
+
+.project:hover .code {
+  color: var(--white);
+}
+
+.project-image {
+  height: calc(100% - 6.8rem);
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-title {
+  font-size: 2rem;
+  padding: 2rem 0.5rem;
+  background:var(--green);}
+
+  
+/*END OF WORK*/
+
+
+/*START CONTACT STYLING*/
 .contact {background-color: var(--black);}
+
 
 .contact h1 {
   text-align: center;
