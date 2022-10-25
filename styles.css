@@ -58,7 +58,7 @@ nav {
   }
   
   #check:checked ~ .primary-menu {
-    height: 100vh;
+    height: 40vh;
   }
   
   #check:checked ~ .primary-menu li {
@@ -158,9 +158,9 @@ nav {
      
 }
 
-/*END GLOBAL STYLES*/
+/*END NAV STYLES*/
 
-/*START GLOBAL STYLES*/
+/*START HERO STYLES*/
 
 
 .hero {
@@ -206,3 +206,112 @@ nav {
 
 .hero p {text-align: center;
 word-spacing: 5px;}
+
+/*END HERO STYLES*/
+
+/*START WORK STYLES*/
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
+
+
+
+.container {
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    height: 75vh;
+    gap: 50px;
+  }
+
+}
+
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: scale 150ms ease;
+  box-shadow: 0 0 10px #00000020;
+  user-select: none;
+}
+
+.card:hover {
+  scale: 1.05;
+}
+
+.card > div {
+  padding: 21px 80px;
+  
+}
+
+.card-header {
+  background-color: var(--green);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.card-header::after {
+  content: "";
+  width: 25px;
+  height: 25px;
+  rotate: 45deg;
+  background-color:var(--green);
+  position: absolute;
+  bottom: -7px;
+}
+
+.card-header p {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.card-body {
+  background-color:var(--light-gray);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding-bottom: 60px !important;
+  background-image: url(images/300x500.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+
+
+.card-1 > .card-header,
+.card-3 > .card-header {
+  background-color: var(--green);
+}
+
+.card-1 > .card-header::after,
+.card-3 > .card-header::after {
+  content: "";
+  width: 25px;
+  height: 25px;
+  rotate: 45deg;
+  background-color: var(--green);
+  position: absolute;
+  bottom: -7px;
+}
+
+#contact {background-color: var(--white);}
