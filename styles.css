@@ -139,7 +139,7 @@ a {
 }
 
 @media only screen and (max-width: 600px) {
-    .hero {height: 75vh;
+    .hero {height: 50vh;
             width: auto;
             padding-left: 20px;
             padding-right: 20px;
@@ -172,17 +172,27 @@ word-spacing: 5px;}
 /*START OF WORK STYLES*/
 
 .work-links-header {
-  max-width: 1000px;
+
   margin-bottom: 50px;
-  text-align: center;
+  padding-top: 50px;
+  text-align: center;}
+
+  @media only screen and (max-width: 600px) {
+    .work-links-header h2 {
+      font-size: 25px;
+      max-width: 400px;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  }
   
-}
+
 
 .work {
     width: auto;
     height: auto;
     background-color: var(--gray);
-    padding: 10rem 20rem;
+    padding: 1rem 5rem;
     color: var(--white);
     text-align: center;
     }
@@ -190,7 +200,8 @@ word-spacing: 5px;}
 
     @media only screen and (max-width: 600px) {
         .work {padding:0;}
-        
+
+      
    
       }
 
@@ -203,7 +214,7 @@ word-spacing: 5px;}
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-  margin-bottom: 6rem;
+  padding-bottom: 6rem;
   text-align: center;
 }
 
@@ -213,6 +224,7 @@ word-spacing: 5px;}
 }
 
 .project {background-color: var(--green);
+  border-radius: 10px;
 }
 
 
@@ -221,15 +233,20 @@ word-spacing: 5px;}
 }
 
 .project-image {
-  height: calc(100% - 6.8rem);
+  height: calc(100% - 4.8rem);
   width: 100%;
   object-fit: cover;
+  border-radius: 10px 10px 0 0;
 }
 
 .project-title {
   font-size: 2rem;
-  padding: 2rem 0.5rem;
-  background:var(--green);}
+  padding: 1rem 0.5rem;
+  margin-top: 0;
+  background:var(--green);
+  border-radius: 10px;
+}
+
 
   
 /*END OF WORK*/
@@ -246,6 +263,19 @@ word-spacing: 5px;}
 
 .contact p {text-align: center;
   color: var(--green);}
+
+  @media only screen and (max-width: 600px) {
+    .contact h1 {  font-size: 5rem;
+      line-height: 85px;
+      padding-bottom: 50px;}
+    
+
+  }
+
+.hero h1 {
+    margin-bottom: -20px;
+    text-align: center;
+}
 
 
 .form {
