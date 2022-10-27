@@ -192,14 +192,15 @@ nav {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  ;
 }
 
 @media only screen and (max-width: 600px) {
-  .hero {height: 70vh;
+  .hero {height: 75vh;
           width: auto;
           padding-left: 20px;
           padding-right: 20px;
-         
+          margin-bottom: -20px;
         }
   
   .hero h1 {
@@ -298,7 +299,7 @@ nav {
 @media screen and (max-width: 600px) {
   .container {
     flex-direction: column;
-    height: 140vh;
+    height: 100vh;
     gap: 50px;
   }
 
@@ -316,12 +317,10 @@ nav {
   }
 
  .work-header {
-  padding-bottom: 60px;}
-
+  padding-bottom: 60px;
+}
   
 }
-
-
 
 
 .card {
@@ -332,7 +331,7 @@ nav {
   box-shadow: 0 0 10px #00000020;
   user-select: none;
   border-radius: 20px 20px 0 0;
-  
+  width: 40%;
 }
 
 .card:hover {
@@ -353,6 +352,7 @@ nav {
   justify-content: center;
   position: relative;
   border-radius: 20px 20px 0 0;
+  text-align: center;
 }
 
 .card-header::after {
