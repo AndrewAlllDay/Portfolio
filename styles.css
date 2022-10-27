@@ -58,7 +58,7 @@ nav {
   }
   
   #check:checked ~ .primary-menu {
-    height: 40vh;
+    height: 30vh;
   }
   
   #check:checked ~ .primary-menu li {
@@ -80,6 +80,18 @@ nav {
       margin-left: 2rem;
     }
   
+    @media only screen and (min-width: 600px) {
+      .brand img {
+        width: 20%;
+      }
+    }
+
+    @media only screen and (min-width: 400px) {
+      .brand img {
+        width: 20%;
+      }
+    }
+
   
   .hamburger-btn {
     display: block;
@@ -97,7 +109,7 @@ nav {
     height: 0;
     top: 75px;
     text-align: left;
-    background: #2a3b51;
+    background: var(--light-gray);
     list-style: none;}
 
     li {
@@ -168,10 +180,11 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   background-color:var(--black);
-  color:var(--green);
+  color:var(--white);
   overflow: hidden;
   background: #C04848;  /*fallback for old browsers;*/
   background: linear-gradient(rgba(0, 0, 0, 0.472), rgba(0, 0, 0, 0.915)), url("images/michael-w9MeSCK0imA-unsplash.jpg");
@@ -182,7 +195,7 @@ nav {
 }
 
 @media only screen and (max-width: 600px) {
-  .hero {height: 50vh;
+  .hero {height: 70vh;
           width: auto;
           padding-left: 20px;
           padding-right: 20px;
@@ -199,8 +212,8 @@ nav {
 }
 
 .hero h1 {
- 
   text-align: center;
+  margin-top: -150px;
 }
 
 .hero p {
@@ -208,8 +221,40 @@ nav {
   word-spacing: 5px;
   font-weight: 200;
 }
+@keyframes bouncing {
+  0% {bottom: 0;}
+  50% {bottom: 20px;}
+  100% {bottom: 0;}
+}
+
+.arrow {
+  animation: bouncing 1s infinite ease-in-out;
+  bottom: 0;
+  display: block;
+  height: 50px;
+  left: 50%;
+  margin-left: -25px;
+  position: absolute;
+  width: 50px;
+  margin-bottom: 100px;
+}
+
+@media only screen and (min-width: 600px) {
+  .arrow {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  .arrow {
+    margin-bottom: 20px;
+  }
+}
+
 
 /*END HERO STYLES*/
+
+/*------------------------------------------*/
 
 /*START WORK STYLES*/
 
@@ -217,7 +262,8 @@ nav {
 
 .work-header {
   padding-top: 60px;
-  padding-bottom: -30px;
+  color: var(--black);
+  
 }
 
 .work-header h1 {
@@ -252,11 +298,31 @@ nav {
 @media screen and (max-width: 600px) {
   .container {
     flex-direction: column;
-    height: 75vh;
+    height: 140vh;
     gap: 50px;
   }
 
+  .work-header {
+    padding-bottom: 60px;
+  }
+
 }
+
+@media screen and (max-width: 400px) {
+  .container {
+    flex-direction: column;
+    height: 150vh;
+    gap: 50px;
+  }
+
+ .work-header {
+  padding-bottom: 60px;}
+
+  
+}
+
+
+
 
 .card {
   display: flex;
@@ -314,11 +380,10 @@ nav {
   background-image: url(images/300x500.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   border-radius: 0 0 10px 10px;
 
 }
-
-
 
 .card-1 > .card-header,
 .card-3 > .card-header {
@@ -336,4 +401,79 @@ nav {
   bottom: -7px;
 }
 
-#contact {background-color: var(--white);}
+@media screen and (max-width: 600px) {
+
+  .card > div {
+    padding:25px 100px;
+  }
+
+  
+}
+
+@media screen and (max-width: 400px) {
+
+  .card > div {
+    padding:25px 100px;
+  }
+
+  
+}
+
+/*END WORK STYLES*/
+
+/*------------------------------------------*/
+
+/*START CONTACT STYLES*/
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--black);
+  height: 60vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.form {width: 400px;}
+
+.contact-container h1 {
+  color: var(--white);
+  background-color: var(--black);
+}
+
+.contact-container p {
+  color: var(--white);
+}
+
+.contact > form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 20vh;
+}
+
+.contact-header {
+  background-color: var(--black);
+  align-items: center;
+  }
+
+.form-control {width: 100%;}
+
+  .form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+label {
+  color: var(--white);
+  font-weight: 200;
+  font-size: 1.5rem;
+}
