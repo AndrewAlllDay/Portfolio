@@ -42,6 +42,9 @@ a {
     text-decoration: none;
     color:var(--black);}
 
+
+.green {color: var(--green);}
+
 /*END GLOBAL STYLES*/
 
 /*START NAV STYLES*/
@@ -110,7 +113,8 @@ nav {
     top: 75px;
     text-align: left;
     background: var(--light-gray);
-    list-style: none;}
+    list-style: none;
+    z-index: 10;}
 
     li {
       display: none;
@@ -331,7 +335,7 @@ nav {
   box-shadow: 0 0 10px #00000020;
   user-select: none;
   border-radius: 20px 20px 0 0;
-  width: 40%;
+  width: 30%;
 }
 
 .card:hover {
@@ -366,24 +370,42 @@ nav {
 }
 
 .card-header p {
-  font-weight: 600;
+  font-weight: 200;
   font-size: 24px;
 }
 
-.card-body {
+.card-body-1 {
   background-color:var(--light-gray);
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 30px;
   padding-bottom: 240px !important;
-  background-image: url(images/300x500.png);
+  background-image: url(images/Graphic_Design.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   border-radius: 0 0 10px 10px;
-
 }
+
+.card-body-2 {
+  background-color:var(--light-gray);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding-bottom: 240px !important;
+  background-image: url(images/Graphic_Design.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 0 10px 10px;
+}
+
+
+
+
+
 
 .card-1 > .card-header,
 .card-3 > .card-header {
@@ -429,7 +451,7 @@ nav {
   display: flex;
   flex-direction: column;
   background-color: var(--black);
-  height: 60vh;
+  height: 100vh;
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -445,6 +467,10 @@ nav {
 
 .contact-container p {
   color: var(--white);
+  text-align: center;
+  word-spacing: 5px;
+  font-weight: 200;
+  font-size: 1.5rem;
 }
 
 .contact > form {
@@ -457,23 +483,48 @@ nav {
   height: 20vh;
 }
 
-.contact-header {
-  background-color: var(--black);
-  align-items: center;
+.contact-message {
+  padding-bottom: 50px;
   }
 
-.form-control {width: 100%;}
+.form-control {
+  display: block;
+  width: 100%;
+  height: 2.375rem;
+  padding: 0.375rem 0.75rem;
+  color: var(--light-gray);
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
 
-  .form-group {
+.form-group {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   width: 100%;
+  margin-bottom: 50px;
+
 }
 
 label {
   color: var(--white);
   font-weight: 200;
   font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  height: 5rem;
+  padding: 0.375rem 0.75rem;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
