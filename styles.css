@@ -118,7 +118,7 @@ nav {
     list-style: none;
     z-index: 10;}
 
-     li {
+     .primary-menu li {
       display: none;
       line-height: 1.5;
       transition: all 0.5s ease-out;
@@ -136,7 +136,7 @@ nav {
       padding: 1rem 2rem;
     }
     
-     li a.active {
+    .main-nav li a.active {
       border-left: 4px solid var(--white);
     }
     
@@ -158,18 +158,18 @@ nav {
       display: flex;
       justify-content: flex-end;}
       
-      li {
+      .primary-menu li {
         display: inline-flex;
         margin: 0.5rem;
       }
       
-      li a.active {
+      .primary-menu li a.active {
         border-top: 4px solid var(--clr--active);
         border-left: 4px solid transparent;
       }
 
-      li a:hover,
-      li a:focus {
+      .primary-menu li a:hover,
+      .primary-menu li a:focus {
         border-top: 4px solid var(--clr--hover);
         border-left: 4px solid transparent;
       }
@@ -534,9 +534,17 @@ textarea {
 /*FOOTER NAV STYLES*/
 
 .work-links {
-  background-color: aliceblue;
+  background-color: var(--black);
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--white);
 }
 
-.work-links li {
-  color: #000;
+.work-links a {
+  color:var(--white);
+  font-weight: 200;
 }
+
+.work-links li {font-weight: 200;}
