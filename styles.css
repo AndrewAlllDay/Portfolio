@@ -612,6 +612,20 @@ textarea {
   padding-top: 15px;
 }
 
+.contact-info p {
+  font-size: 15px;
+}
+
+.footer-logo {
+
+  width: 100%;
+  height: 10vh;
+}
+
+.footer-logo img {
+  width: 30%;
+}
+
 .work-links {
   width: 50%;
   height: 25vh;
@@ -638,7 +652,7 @@ textarea {
   line-height: 40px;
 }
 
-
+/*END NAV SYTLING*/
 
 /*START GALLERY SYTLING*/
 
