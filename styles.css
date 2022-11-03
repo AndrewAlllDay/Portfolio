@@ -699,4 +699,43 @@ textarea {
 }
 
 
+/*START OF ABOUT STYLING*/
 
+.about-container {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--black);
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-header {
+  width: 50%;
+  padding-top: 200px;
+  color: var(--black);
+  background-color: #7b7a7a;
+}
+
+.about-header h1 {
+  text-align: center;
+}
+
+.about-header p {
+  text-align: center;
+  word-spacing: 1px;
+  font-weight: 100;
+  font-size: 20px
+}
+
+.about-image {
+  width: 50%;
+  height: auto;
+  background-color: aliceblue;
+}
+
+.about-image img {
+  object-fit: cover;
+  width: 100%;
+}
