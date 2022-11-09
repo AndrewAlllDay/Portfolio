@@ -315,6 +315,14 @@ nav {
 
 /*START WORK STYLES*/
 
+.header-container {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
 
 .work-header {
   padding-top: 200px;
@@ -713,13 +721,14 @@ textarea {
 
 .about-header {
   width: 50%;
-  padding-top: 200px;
+  padding-top: 100px;
   color: var(--black);
   background-color: #7b7a7a;
 }
 
 .about-header h1 {
   text-align: center;
+  justify-content: center;
 }
 
 .about-header p {
@@ -730,12 +739,16 @@ textarea {
 }
 
 .about-image {
+  display: flex;
   width: 50%;
   height: auto;
   background-color: aliceblue;
+  align-items: center;
+  justify-content: center;
 }
 
 .about-image img {
   object-fit: cover;
-  width: 100%;
+  width: 50%;
+
 }
