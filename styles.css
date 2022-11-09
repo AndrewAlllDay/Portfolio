@@ -251,7 +251,7 @@ nav {
 }
 
 @media only screen and (max-width: 600px) {
-  .hero {height: 75vh;
+  .hero {height: 95vh;
           width: auto;
           padding-left: 20px;
           padding-right: 20px;
@@ -259,12 +259,12 @@ nav {
         }
   
   .hero h1 {
-    font-size: 5rem;
-    line-height: 85px;
-    padding-bottom: 50px;
+    font-size: 6rem;
+    line-height: 100px;
+    padding-bottom: 35px;
   }
 
-  .hero p {font-size: 1.5rem;}
+  .hero p {font-size: 1.3rem;}
 }
 
 .hero h1 {
@@ -296,18 +296,13 @@ nav {
   margin-bottom: 100px;
 }
 
-@media only screen and (min-width: 600px) {
-  .arrow {
-    margin-bottom: 20px;
-  }
+@media only screen and (max-width: 600px) {
+  .arrow {margin-bottom: 0;}
 }
 
-@media only screen and (min-width: 400px) {
-  .arrow {
-    margin-bottom: 20px;
-  }
+@media only screen and (max-width: 600px) {
+  .arrow {margin-bottom: 0;}
 }
-
 
 /*END HERO STYLES*/
 
@@ -322,6 +317,10 @@ nav {
   justify-content: center;
   align-items: center;
   margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .header-container {width: 200px;}
 }
 
 .work-header {
