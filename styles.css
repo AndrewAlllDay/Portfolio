@@ -564,8 +564,9 @@ nav {
     text-align: center;
     line-height: 80px;
     font-size: 5rem;
+    padding-bottom: 30px;
   }
-  
+
 }
 
 .contact > form {
