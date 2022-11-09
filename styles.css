@@ -376,6 +376,7 @@ nav {
     flex-direction: column;
     height: 100vh;
     gap: 50px;
+    padding-bottom: 25px;
   }
 
   .work-header {
@@ -388,7 +389,7 @@ nav {
   .container {
     flex-direction: column;
     height: 90vh;
-    gap: 50px;
+    gap: 80px;
   }
 
  .work-header {
@@ -458,6 +459,7 @@ nav {
   background-size: cover;
   background-position: center;
   border-radius: 0 0 10px 10px;
+  height: 10vh;
 }
 
 .card-body-2 {
@@ -472,8 +474,18 @@ nav {
   background-size: cover;
   background-position: center;
   border-radius: 0 0 10px 10px;
+  height: 10vh;
 }
 
+@media screen and (max-width: 400px) {
+  .card-body-1 {
+    height: 0vh;
+  }
+  .card-body-2 {
+    height: 0vh;
+  }
+
+}
 
 
 
