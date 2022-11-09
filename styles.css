@@ -320,7 +320,7 @@ nav {
 }
 
 @media only screen and (max-width: 600px) {
-  .header-container {width: 200px;}
+  .header-container {width: 300px;}
 }
 
 .work-header {
@@ -339,6 +339,17 @@ nav {
   font-weight: 100;
   font-size: 20px
 }
+
+@media only screen and (max-width: 600px) {
+  .work-header {
+    padding-top: 120px;
+  }
+  .work-header h1 {
+    line-height: 100px;
+    padding-bottom: 35px;
+  }
+}
+
 
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
 
@@ -368,7 +379,7 @@ nav {
   }
 
   .work-header {
-    padding-bottom: 60px;
+    padding-bottom: 40px;
   }
 
 }
@@ -376,12 +387,12 @@ nav {
 @media screen and (max-width: 400px) {
   .container {
     flex-direction: column;
-    height: 150vh;
+    height: 90vh;
     gap: 50px;
   }
 
  .work-header {
-  padding-bottom: 60px;
+  padding-bottom: 20px;
 }
   
 }
@@ -441,7 +452,7 @@ nav {
   flex-direction: column;
   align-items: center;
   gap: 30px;
-  padding-bottom: 240px !important;
+  padding-bottom: 180px !important;
   background-image: url(images/Graphic_Design.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -455,7 +466,7 @@ nav {
   flex-direction: column;
   align-items: center;
   gap: 30px;
-  padding-bottom: 240px !important;
+  padding-bottom: 180px !important;
   background-image: url(images/web_development.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -485,6 +496,7 @@ nav {
 }
 
 @media screen and (max-width: 600px) {
+  .card {width: 80%;}
 
   .card > div {
     padding:25px 100px;
@@ -494,6 +506,7 @@ nav {
 }
 
 @media screen and (max-width: 400px) {
+  .card {width: 80%;}
 
   .card > div {
     padding:25px 100px;
@@ -534,6 +547,15 @@ nav {
   font-size: 20px;
 }
 
+@media screen and (max-width: 400px) {
+  .contact-container h1 {
+    text-align: center;
+    line-height: 80px;
+    font-size: 5rem;
+  }
+  
+}
+
 .contact > form {
   display: flex;
   flex-direction: row;
@@ -568,6 +590,13 @@ nav {
   width: 100%;
   margin-bottom: 50px;
 
+}
+
+@media screen and (max-width: 400px) {
+.form-control {
+  width: 80%;
+}
+  
 }
 
 label {
