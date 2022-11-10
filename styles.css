@@ -40,7 +40,7 @@ ul {list-style: none;}
 
 a {
     text-decoration: none;
-    color:var(--black);}
+    color:var(--white);}
 
 
 .green {color: var(--green);}
@@ -545,7 +545,7 @@ nav {
 
 @media screen and (max-width: 500px) {
   .contact-container {
-    height: 120vh;
+    height: 65vh;
   }
   
 }
@@ -577,6 +577,12 @@ nav {
 
 }
 
+.contact-logos {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+}
+
 
 .contact-message {
   padding-bottom: 50px;
@@ -589,8 +595,8 @@ nav {
   .contact-message {
     width: 340px;
   }
+  
 }
-
 
 label {
   color: var(--white);
@@ -645,7 +651,18 @@ textarea {
 .fa-brands {
   color: var(--white);
   padding: 0 20px;
+}
 
+.fa-brands:hover {
+  color: var(--green);
+}
+
+.fa-solid {
+  color: var(--white);
+}
+
+.fa-solid:hover {
+  color: var(--green);
 }
 
 .contact-info {
@@ -789,7 +806,7 @@ textarea {
   text-align: center;
   word-spacing: 1px;
   font-weight: 100;
-  font-size: 20px
+  font-size: 20px;
 }
 
 .about-image {
@@ -804,5 +821,4 @@ textarea {
 .about-image img {
   object-fit: cover;
   width: 50%;
-
 }
