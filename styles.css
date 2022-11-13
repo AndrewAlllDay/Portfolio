@@ -1,14 +1,16 @@
-
-.bgimage {
-  width:100%;
-  height:500px;
-  background: url('images/michael-w9MeSCK0imA-unsplash.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size:cover;
-  background-attachment: fixed;
+.navbar-brand img {
+  width: 25%;
 }
-.bgimage h5 {
-  color:white;
-  text-shadow:2px 2px #333;
+
+.home-hero {
+  height: 50rem;
+  background-image: url(images/michael-w9MeSCK0imA-unsplash.jpg);
+}
+
+.btn {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
