@@ -146,3 +146,53 @@ h2 {
 .logo-item:hover {
   color: var(--green);
 }
+
+
+
+/*NAVIGATION STYLES*/
+
+.navbar__container {
+  background: black;
+  color: white;
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav-link:hover {
+  color: var(--green);
+}
+
+@media only screen and (min-width: 992px) {
+  .navbar__container {
+    display: flex;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 10px 250px;
+  }
+  .navbar-brand.second {
+    display: none !important;
+    color: white;
+  }
+  #navbarNav ul li {
+    padding: 0 25px;
+  }
+
+  #navbarNav {
+    padding-left: 50px;
+  }
+  .navbar__container {
+    height: 80px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .hide-on-small {
+    display: none;
+  }
+
+  a.nav-link {
+    padding-top: 20px;
+    text-align: center;
+  }
+}
