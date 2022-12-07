@@ -113,23 +113,22 @@ h2 {
   }
 }
 
-.about {
+.about-header {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.about-me {
   margin-top: 50px;
 
 }
 
-.about-header {
-  margin-top: 200px;
-  margin-bottom: 200px;
-}
 
-.footer {
-  height: 600px;
-}
 
 .container-footer {
-  height: 60vh;
-  padding-top: 50px;
+  height: 50vh;
+  margin-top: 100px;
+  padding: 50px;
 }
 
 .footer-header {
